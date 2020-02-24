@@ -85,24 +85,31 @@ function BMIResult(BMI) {
 }
 
 function outputColorResult(BMI) {
-  if(BMI < 18.50) {
-    outputResult = '過輕';
-    color = '#31BAF9';
-  } else if (BMI >= 18.50 && BMI <= 25.00) {
-    outputResult = '理想';
-    color = '#86D73F';
-  } else if (BMI > 25.00 && BMI <= 30.00) {
-    outputResult = '過重';
-    color = '#FF982D';
-  } else if (BMI > 30.00 && BMI <= 35.00) {
-    outputResult = '輕度肥胖';
-    color = '#FF6C03';
-  } else if (BMI > 35.00 && BMI <= 40.00) {
-    outputResult = '中度肥胖';
-    color = '#FF6C03';
-  } else if (BMI > 40.00) {
-    outputResult = '重度肥胖';
-    color = '#FF1200';
+  switch (true) {
+    case BMI < 18.50 :
+      outputResult = '過輕';
+      color = '#31BAF9';
+      break
+    case BMI >= 18.50 && BMI <= 25.00 :
+      outputResult = '理想';
+      color = '#86D73F';
+      break
+    case BMI > 25.00 && BMI <= 30.0 :
+      outputResult = '過重';
+      color = '#FF982D';
+      break
+    case BMI > 30.00 && BMI <= 35.00 :
+      outputResult = '輕度肥胖';
+      color = '#FF6C03';
+      break
+    case BMI > 35.00 && BMI <= 40.00 :
+      outputResult = '中度肥胖';
+      color = '#FF6C03';
+      break
+    case BMI > 40.00 :
+      outputResult = '重度肥胖';
+      color = '#FF1200';
+      break
   }
 }
 
