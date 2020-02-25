@@ -12,4 +12,4 @@
   * localStorage Web API
 
 ## 聲明
-  ＊ 練習設計稿來自 [六角學院 - JavaScript 入門篇 - 學徒的試煉](https://www.hexschool.com/courses/javascript.html)
+  * 練習設計稿來自 [六角學院 - JavaScript 入門篇 - 學徒的試煉](https://www.hexschool.com/courses/javascript.html)
